@@ -1,17 +1,21 @@
+import { Link } from "react-router-dom"
 import "./Nav.css"
 const Nav = () => {
-
-    return (
-        <nav>
-         <ul>
-          <li> <a href="\">Home</a></li>
-          <li> <a href="#">About</a></li>
-          <li> <a href="#">Users</a></li>
-        </ul>
-           
-        </nav>
-    )
-
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/users">Users</Link>
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
 export default Nav
